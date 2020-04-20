@@ -1,0 +1,22 @@
+{
+  "name": "202012701_pik",
+  "version": "1.0.0",
+  "description": "REST 프로젝트 202012701_PIK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IDU-SW/202012701_PIK.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IDU-SW/202012701_PIK/issues"
+  },
+  "homepage": "https://github.com/IDU-SW/202012701_PIK#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
