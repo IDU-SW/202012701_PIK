@@ -1,0 +1,21 @@
+<html>
+<head>
+   <meta charset="UTF-8" />
+    <title>202012701 PIK 8주차</title>
+</head>
+<body>
+    <h1><%= detail.name %> 수정하기</h1> 
+    <form action="/coffees/edit" method="POST" >
+        <input type="hidden" name="id" value="<%= detail.id %>">
+<pre>
+커피 이름 : <input type="text" name="name" value="<%= detail.name %>" style="width:300px;"></br></br>
+커피 용량 : <input type="text" name="volume" value="<%= detail.volume %>" style="width:300px;"></br></br>
+커피 칼로리  : <input type="text" name="calorie" value="<%= detail.calorie %>" style="width:300px;"></br></br>
+커피 카페인 : <input type="text" name="caffeine" value="<%= detail.caffeine %>" style="width:300px;"></br>
+<p>
+<input type="submit" value="커피 정보 수정">  <input type="button" value="돌아가기" onclick="history.back(-1)">
+</p>
+</pre>
+    </form> 
+</body>
+</html>

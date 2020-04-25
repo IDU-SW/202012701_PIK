@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>커피 리스트</title>
+    <h1 style="color:burlywood;">202012701 PIK 9주차 (커피 리스트)</h1>
+</head>
+<body>
+    <ul>
+        <% data.forEach(function(item) { %>
+            <h3><a href='../Coffee/<%= item.id %>'>번호 : <%= item.id %></a></h3>
+            <ul>
+                <li>커피 이름 : <%= item.name %>  </li>
+                <li>커피 용량 : <%= item.volume %>  </li>
+                <li>커피 칼로리 : <%= item.calorie %>  </li>
+                <li>커피 카페인 : <%= item.caffeine %>  </li>
+            </ul>
+        <% }) %>
+    </ul>
+    <br>
+    <a href="../CoffeeAdd">추가</a>
+</body>
+</html>

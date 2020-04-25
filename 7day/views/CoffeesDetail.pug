@@ -1,0 +1,22 @@
+html
+   head
+      meta(charset="UTF-8")
+      title 202012701 PIK COFFEE LIST
+   body
+      h2
+       a(href='/coffees') 커피 목록
+      h1= name
+      ul
+        li
+            h3= "커피 이름 : " + view.name
+        li
+            h3= "커피 용량 : " + view.volume
+        li
+            h3= "커피 칼로리 : " + view.calorie
+        li
+            h3= "커피 카페인 양 : " + view.caffeine
+            form(action='/coffees/'+ view.id+'?_method=DELETE' method='post')
+             button(type='button')
+              a(href='/coffees/edit/'+ view.id) 수정하기
+             input(type="submit" value="삭제하기")
+                 

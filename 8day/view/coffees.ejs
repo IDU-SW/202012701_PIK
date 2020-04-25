@@ -1,0 +1,21 @@
+<html>
+<head>
+   <meta charset="UTF-8" />
+    <title>202012701 PIK 8주차</title>
+</head>
+<body>
+    <h1>커피 정보 갯수 : <%= count %></h1>
+    <p>
+        <input type="button" value="커피 정보 추가" onclick="location.href='/coffee/add'">
+    </p>
+    <% coffees.forEach(function(item) { %>
+    <h3><a href='/coffees/<%= item.id %>'>번호 : <%= item.id %></a></h3>
+    <ul>
+        <li>커피 이름 : <%= item.name %>  </li>
+        <li>커피 용량 : <%= item.volume %>  </li>
+        <li>커피 칼로리 : <%= item.calorie %>  </li>
+        <li>커피 카페인 : <%= item.caffeine %>  </li>
+    </ul>
+    <% }) %>
+</body>
+</html>
