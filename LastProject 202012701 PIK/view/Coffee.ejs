@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>202012701 박인규 기말 프로젝트</title>
+</head>
+
+<body>
+    <h1>커피 목록</h1>
+    <h3>어서오세요~ <%= user.registerName %> 님 오늘도 좋은 하루 되세요. </h3>
+    <p>
+        <input type="button" value="커피등록" onclick="location.href='/coffee/add'"> <input type="button" value="로그아웃" onclick="location.href='/logout'">
+    </p>
+    <% coffee.forEach(function(data) { %>
+    <h3><a href='/coffee/<%= data._id %>'>ID : <%= data._id %></a></h3>
+
+    커피 이름 : <%= data.name %> </br>
+    커피 용량 : <%= data.volume %> </br>
+    커피 칼로리 : <%= data.calorie %> </br>
+    커피 카페인 : <%= data.caffeine %> </br>
+    <% }) %>
+</body>
+
+</html>
