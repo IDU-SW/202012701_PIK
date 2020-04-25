@@ -1,0 +1,14 @@
+html
+   head
+      meta(charset="UTF-8")
+      title 202012701 PIK COFFEE LIST
+   body
+      h1= name
+      h2= "총 커피 정보 갯수는 : " + count 
+      ul
+         for coffees in list
+            li
+               a(href='/coffees/'+coffees.id)
+                h3=coffees.name
+         button(type='button')
+          a(href='/coffee/add') 커피 추가하기

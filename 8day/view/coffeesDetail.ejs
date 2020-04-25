@@ -1,0 +1,21 @@
+<html>
+<head>
+   <meta charset="UTF-8" />
+    <title>202012701 PIK 8주차</title>
+</head>
+<body>
+    <h1><%= detail.name %></h1>
+    <ul>
+        <li>커피 용량 : <%= detail.volume %>  </li>
+        <li>커피 칼로리 : <%= detail.calorie %>  </li>
+        <li>커피 카페인 : <%= detail.caffeine %>  </li>
+    </ul>
+    </br>
+
+    <form name="detail" method="post" action="/coffees/delete">
+        <input type="hidden" name="id" value="<%= detail.id %>">
+        <input type="button" value="커피 정보 수정" onclick="location.href='/coffees/detail/<%= detail.id %>'">&nbsp;
+        <input type="submit" value="커피 정보 삭제">
+    </form>  
+</body>
+</html>
