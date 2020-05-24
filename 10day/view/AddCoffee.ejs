@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>커피 추가</title>
+    <h1 style="color:burlywood;">202012701 PIK 9주차 (커피 추가)</h1>
+</head>
+<body>
+    <form action="/coffee" method="POST">
+        커피 이름 : <input type="text" name="name" style="width:300px;"></br></br>
+        커피 용량 : <input type="text" name="volume" style="width:300px;" value="ml"></br></br>
+        커피 칼로리 : <input type="text" name="calorie" style="width:300px;" value="Kcal"></br></br>
+        커피 카페인 : <input type="text" name="caffeine" style="width:300px;" value="mg"></br><br>
+        <br><br>
+
+        <input type="submit" value="커피 정보 추가">
+        <input type="button" value="돌아가기" onclick="history.back(-1)">
+    </form>
+</body>
+
+</html>

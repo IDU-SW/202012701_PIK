@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>커피 수정</title>
+    <h1 style="color:burlywood;">202012701 PIK 9주차 (커피 수정)</h1>
+</head>
+<body>
+    <br>
+    <form method="post" action="/coffee/update/<%= data._id %>">
+        <input type="hidden" name="coffeeId" value="<%= data._id %>">
+        커피 이름 : <input type="text" name="name" value="<%= data.name %>" style="width:300px;"></br></br>
+        커피 용량 : <input type="text" name="volume" value="<%= data.volume %>" style="width:300px;"></br></br>
+        커피 칼로리 : <input type="text" name="calorie" value="<%= data.calorie %>" style="width:300px;"></br></br>
+        커피 카페인 : <input type="text" name="caffeine" value="<%= data.caffeine %>" style="width:300px;"></br><br>
+        <input type="submit" value="수정">
+        <input type="button" value="돌아가기" onclick="history.back(-1)">
+    </form>
+</body>
+
+</html>
