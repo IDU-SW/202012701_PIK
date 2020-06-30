@@ -1,5 +1,6 @@
 # 202012701_PIK
 
+<<<<<<< Updated upstream
 202012701 박인규 9주차 과제
 ===
 DAY9. Sequelize 적용하기
@@ -145,3 +146,8 @@ DAY7. 프론트엔드를 추가한 웹 서비스 작성하기
 | 메세지 구조 | - msg : 성공/실패 메세지<br />- data<br />-- id : 수정된 커피 ID<br />-- name : 수정된 커피 이름<br />-- volume : 수정된 커피 용량<br />-- calorie : 수정된 커피 칼로리<br />-- caffeine : 수정된 커피 카페인 |
 |  메세지 예  | {<br/>    "msg": "SUCCESS, 2번의 내용이 변경되었습니다.",<br/>    "data": {<br/>        "id": 2,<br/>        "name": "에스프레소 콘파냐",<br/>        "volume": "32ml",<br/>        "calorie": "120Kcal",<br/>        "caffeine": "75mg"<br/>    }<br/>} |
 
+=======
+마지막 프로젝트
+
+branch : LastProject 에 있습니다.
+>>>>>>> Stashed changes
